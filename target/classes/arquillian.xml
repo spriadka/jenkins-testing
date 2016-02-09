@@ -121,7 +121,7 @@
         <property name="remoteReusable">${arquillian.drone.reusable}</property>
         <property name="remoteAddress">http://localhost:4444/wd/hub/</property>
 
-        <property name="chromeDriverBinary">/home/spriadka/apps/chromedriver</property>
+        <property name="chromeDriverBinary">${env.HOME}/chromedriver</property>
         <property name="phantomjs.binary.path">target/phantomjs</property>
 
     </extension>
@@ -163,7 +163,7 @@
     </extension>
     
     <extension qualifier="visual-testing">
-        <property name="testSuiteName">webapp-01</property>
+        <property name="testSuiteName">jenkins01</property>
         <!-- this can be detected!!!!! from JCR -->
         <property name="firstRun">false</property>
         <property name="failBuild">false</property>
