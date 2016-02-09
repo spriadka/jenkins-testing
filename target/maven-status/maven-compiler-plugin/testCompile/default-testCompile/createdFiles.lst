@@ -1,0 +1,3 @@
+org/jboss/arquillian/extension/testsuite/tests/AnotherTest.class
+org/jboss/arquillian/extension/testsuite/tests/SimpleTest.class
+org/jboss/arquillian/extension/testsuite/tests/Suite.class

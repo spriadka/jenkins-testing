@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<visual-suite xmlns="http://www.jboss.org/rusheye/visual-suite" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jboss.org/rusheye/visual-suite http://www.jboss.org/schema/arquillian/rusheye/visual-suite.xsd">  
+  <global-configuration> 
+    <listener type="org.jboss.rusheye.parser.listener.CompareListener"> 
+      <result-collector>org.jboss.rusheye.result.collector.ResultCollectorImpl</result-collector>  
+      <result-storage>org.jboss.rusheye.result.storage.FileStorage</result-storage>  
+      <result-writer>org.jboss.rusheye.result.writer.FileResultWriter</result-writer>  
+      <result-statistics>org.jboss.rusheye.result.statistics.OverallStatistics</result-statistics> 
+    </listener>  
+    <pattern-retriever type="org.jboss.rusheye.retriever.pattern.PatternFileRetriever"/>  
+    <mask-retriever type="org.jboss.rusheye.retriever.mask.MaskFileRetriever"/>  
+    <sample-retriever type="org.jboss.rusheye.retriever.sample.FileSampleRetriever"/>  
+    <perception/>  
+    <mask id="mask51" source="http://localhost:8080/modeshape-rest/graphene-visual-testing/default/binary/webapp-01/masks/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testGoogleAndTypeSomething/after/mask51/jcr:content/jcr:data" type="selective-alpha"/>  
+    <mask id="mask52" source="http://localhost:8080/modeshape-rest/graphene-visual-testing/default/binary/webapp-01/masks/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testGoogleAndTypeSomething/after/mask52/jcr:content/jcr:data" type="selective-alpha"/>  
+    <mask id="mask57" source="http://localhost:8080/modeshape-rest/graphene-visual-testing/default/binary/webapp-01/masks/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testSeznamAndTypeSomething/after/mask57/jcr:content/jcr:data" type="selective-alpha"/>
+  </global-configuration>  
+  <test name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after"> 
+    <mask id="mask51" source="http://localhost:8080/modeshape-rest/graphene-visual-testing/default/binary/webapp-01/masks/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testGoogleAndTypeSomething/after/mask51/jcr:content/jcr:data" type="selective-alpha"/>  
+    <mask id="mask52" source="http://localhost:8080/modeshape-rest/graphene-visual-testing/default/binary/webapp-01/masks/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testGoogleAndTypeSomething/after/mask52/jcr:content/jcr:data" type="selective-alpha"/>  
+    <pattern name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after" source="org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testGoogleAndTypeSomething/after.png"/> 
+  </test>  
+  <test name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after"> 
+    <mask id="mask57" source="http://localhost:8080/modeshape-rest/graphene-visual-testing/default/binary/webapp-01/masks/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testSeznamAndTypeSomething/after/mask57/jcr:content/jcr:data" type="selective-alpha"/>
+    <pattern name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after" source="org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testSeznamAndTypeSomething/after.png"/>
+  </test> 
+</visual-suite>
