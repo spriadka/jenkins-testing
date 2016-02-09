@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest" time="0.633" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="org.jboss.arquillian.extension.testsuite.tests.SimpleTest" time="0.001" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_45/jre/lib/amd64"/>
@@ -58,12 +58,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.jboss.arquillian.extension.testsuite.tests.AnotherTest" name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest" time="0.633">
-    <error message="Could not create new instance of class org.jboss.arquillian.test.impl.EventTestRunnerAdaptor" type="java.lang.RuntimeException">java.lang.RuntimeException: Could not create new instance of class org.jboss.arquillian.test.impl.EventTestRunnerAdaptor
-	at org.jboss.arquillian.test.spi.SecurityActions.newInstance(SecurityActions.java:165)
-	at org.jboss.arquillian.test.spi.SecurityActions.newInstance(SecurityActions.java:102)
-	at org.jboss.arquillian.test.spi.TestRunnerAdaptorBuilder.build(TestRunnerAdaptorBuilder.java:52)
-	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:113)
+  <testcase classname="org.jboss.arquillian.extension.testsuite.tests.SimpleTest" name="org.jboss.arquillian.extension.testsuite.tests.SimpleTest" time="0.001">
+    <error message="Arquillian has previously been attempted initialized, but failed. See cause for previous exception" type="java.lang.RuntimeException">java.lang.RuntimeException: Arquillian has previously been attempted initialized, but failed. See cause for previous exception
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:106)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
@@ -76,6 +73,12 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: Could not create new instance of class org.jboss.arquillian.test.impl.EventTestRunnerAdaptor
+	at org.jboss.arquillian.test.spi.SecurityActions.newInstance(SecurityActions.java:165)
+	at org.jboss.arquillian.test.spi.SecurityActions.newInstance(SecurityActions.java:102)
+	at org.jboss.arquillian.test.spi.TestRunnerAdaptorBuilder.build(TestRunnerAdaptorBuilder.java:52)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:113)
+	... 12 more
 Caused by: java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
