@@ -31,7 +31,7 @@ public class AnotherTest {
    
     @Test
     public void testGoogleAndTypeSomething(){
-        String toWrite = "holbbbba";
+        String toWrite = "holbbbaaaba";
         browser.get("http://www.google.com");
         Graphene.waitModel().until().element(searchInput).is().visible();
         searchInput.sendKeys(toWrite);
@@ -41,7 +41,7 @@ public class AnotherTest {
     public void testSeznamAndTypeSomething(){
         browser.get("http://www.seznam.cz");
         searchInput = browser.findElement(By.name("q"));
-        searchInput.sendKeys("baabb");
+        searchInput.sendKeys("baabaaaab");
         
     }
     
