@@ -1,37 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <visual-suite-result xmlns="http://www.jboss.org/rusheye/visual-suite-result" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jboss.org/rusheye/visual-suite-result http://www.jboss.org/schema/arquillian/rusheye/visual-suite-result.xsd">
 	<test name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after">
-		<pattern name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after" output="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after.org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after.png" result="DIFFER">
-			<comparison-result>
-				<area height="963" width="1280"/>
-				<rectangle>
-					<min x="0" y="0"/>
-					<max x="1279" y="496"/>
-				</rectangle>
-				<total-pixels>1232640</total-pixels>
-				<masked-pixels>0</masked-pixels>
-				<perceptible-different-pixels>63503</perceptible-different-pixels>
-				<global-different-pixels>32768</global-different-pixels>
-				<unperceptible-different-pixels>325</unperceptible-different-pixels>
-				<same-pixels>1136044</same-pixels>
-			</comparison-result>
+		<pattern name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testGoogleAndTypeSomething.after" result="ERROR">
+			<error-output></error-output>
 		</pattern>
 	</test>
 	<test name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after">
-		<pattern name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after" output="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after.org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after.png" result="DIFFER">
-			<comparison-result>
-				<area height="963" width="1280"/>
-				<rectangle>
-					<min x="82" y="0"/>
-					<max x="1279" y="962"/>
-				</rectangle>
-				<total-pixels>1232640</total-pixels>
-				<masked-pixels>0</masked-pixels>
-				<perceptible-different-pixels>231199</perceptible-different-pixels>
-				<global-different-pixels>127187</global-different-pixels>
-				<unperceptible-different-pixels>2406</unperceptible-different-pixels>
-				<same-pixels>871848</same-pixels>
-			</comparison-result>
+		<pattern name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest.testSeznamAndTypeSomething.after" result="ERROR">
+			<error-output></error-output>
 		</pattern>
 	</test>
 </visual-suite-result>

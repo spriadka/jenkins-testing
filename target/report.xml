@@ -188,18 +188,14 @@
          </entry>
       </configuration>
    </extension>
-   <suite start="2016-02-10T15:27:54.305+01:00" stop="2016-02-10T15:28:02.606+01:00" duration="8301">
+   <suite start="2016-02-10T17:05:18.176+01:00" stop="2016-02-10T17:07:18.424+01:00" duration="120248">
       <container qualifier="default">
          <configuration/>
       </container>
-      <class name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest" runAsClient="false" duration="8086">
-         <stop>2016-02-10T15:28:02.606+01:00</stop>
-         <method name="testSeznamAndTypeSomething" result="PASSED" duration="3275" operateOnDeployment="_DEFAULT_" runAsClient="false">
-            <screenshot path="/home/spriadka/Documents/Work/VisualTestingTestSuite/target/screenshots/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testSeznamAndTypeSomething/after.png" size="374358" type="png" phase="AFTER" width="1280" height="963"/>
-         </method>
-         <method name="testGoogleAndTypeSomething" result="PASSED" duration="1090" operateOnDeployment="_DEFAULT_" runAsClient="false">
-            <screenshot path="/home/spriadka/Documents/Work/VisualTestingTestSuite/target/screenshots/org.jboss.arquillian.extension.testsuite.tests.AnotherTest/testGoogleAndTypeSomething/after.png" size="17912" type="png" phase="AFTER" width="1280" height="963"/>
-         </method>
+      <class name="org.jboss.arquillian.extension.testsuite.tests.AnotherTest" runAsClient="false" duration="120129">
+         <stop>2016-02-10T17:07:18.423+01:00</stop>
+         <method name="testSeznamAndTypeSomething" duration="0" operateOnDeployment="_DEFAULT_" runAsClient="false"/>
+         <method name="testGoogleAndTypeSomething" duration="0" operateOnDeployment="_DEFAULT_" runAsClient="false"/>
       </class>
    </suite>
 </report>
