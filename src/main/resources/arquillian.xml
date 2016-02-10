@@ -120,7 +120,7 @@
         <property name="remoteReusable">${arquillian.drone.reusable}</property>
         <property name="remoteAddress">http://localhost:4444/wd/hub/</property>
 		<property name="dimensions">1280x1024</property>
-        <property name="chromeDriverBinary">/home/spriadka/chromedriver</property>
+        <property name="chromeDriverBinary">${env.HOME}/chromedriver</property>
         <property name="phantomjs.binary.path">target/phantomjs</property>
 
     </extension>
