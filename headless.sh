@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-
+killall Xvfb
 Xvfb :99 -screen 5 1024x768x8 &
 XVFB=$!
 export DISPLAY=':99.5'
