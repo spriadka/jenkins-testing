@@ -40,7 +40,7 @@ public class AnotherTest {
     }
     
     @Test
-    public void testSeznamAndTypeSomething(){
+    public void testSeznamAndTypeSomething() throws InterruptedException{
         TimeUnit.SECONDS.sleep(1);
         browser.get("http://www.seznam.cz");
         searchInput = browser.findElement(By.name("q"));
