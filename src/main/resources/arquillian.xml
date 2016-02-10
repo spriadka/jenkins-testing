@@ -116,11 +116,10 @@
 
     <extension qualifier="webdriver">
         <property name="javascriptEnabled">true</property>
-
-        <property name="browser">phantomjs</property>
+        <property name="browser">chrome</property>
         <property name="remoteReusable">${arquillian.drone.reusable}</property>
         <property name="remoteAddress">http://localhost:4444/wd/hub/</property>
-	<property name="dimensions">1280x1024</property>
+		<property name="dimensions">1280x1024</property>
         <property name="chromeDriverBinary">${env.HOME}/chromedriver</property>
         <property name="phantomjs.binary.path">target/phantomjs</property>
 
