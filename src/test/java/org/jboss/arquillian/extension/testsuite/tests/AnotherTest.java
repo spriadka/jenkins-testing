@@ -33,7 +33,7 @@ public class AnotherTest {
     @Test
     public void testGoogleAndTypeSomething() throws InterruptedException{
         TimeUnit.SECONDS.sleep(1);
-        String toWrite = "holbbbaaaaaaaaba";
+        String toWrite = "holbbaaba";
         browser.get("http://www.google.com");
         Graphene.waitModel().until().element(searchInput).is().visible();
         searchInput.sendKeys(toWrite);
@@ -44,7 +44,7 @@ public class AnotherTest {
         TimeUnit.SECONDS.sleep(1);
         browser.get("http://www.seznam.cz");
         searchInput = browser.findElement(By.name("q"));
-        searchInput.sendKeys("baaaaaaaaaaabaaaab");
+        searchInput.sendKeys("baaabaaaab");
         
     }
     
