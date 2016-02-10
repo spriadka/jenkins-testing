@@ -5,6 +5,7 @@
  */
 package org.jboss.arquillian.extension.testsuite.tests;
 
+import java.util.concurrent.TimeUnit;
 import org.jboss.arquillian.drone.api.annotation.Drone;
 import org.jboss.arquillian.graphene.Graphene;
 import org.jboss.arquillian.junit.Arquillian;
@@ -30,7 +31,8 @@ public class AnotherTest {
     private WebElement searchInput;
    
     @Test
-    public void testGoogleAndTypeSomething(){
+    public void testGoogleAndTypeSomething() throws InterruptedException{
+        TimeUnit.SECONDS.sleep(1);
         String toWrite = "holbbbaaaaaaaaba";
         browser.get("http://www.google.com");
         Graphene.waitModel().until().element(searchInput).is().visible();
@@ -39,6 +41,7 @@ public class AnotherTest {
     
     @Test
     public void testSeznamAndTypeSomething(){
+        TimeUnit.SECONDS.sleep(1);
         browser.get("http://www.seznam.cz");
         searchInput = browser.findElement(By.name("q"));
         searchInput.sendKeys("baaaaaaaaaaabaaaab");
