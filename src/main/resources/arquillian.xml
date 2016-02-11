@@ -166,13 +166,12 @@
         <!-- this can be detected!!!!! from JCR -->
         <property name="firstRun">false</property>
         <property name="failBuild">false</property>
-        <!--
         <property name="jcrContextRootURL">http://visualtesting-spriadka.rhcloud.com/modeshape-rest/graphene-visual-testing/default</property>
         <property name="managerContextRootURL">http://visualtesting-spriadka.rhcloud.com/</property> 
-        -->
+        <!--
         <property name="jcrContextRootUrl">http://localhost:8080/modeshape-rest/graphene-visual-testing/default</property>
         <property name="managerContextRootURL">http://localhost:8080/</property>
-        
+        -->
         <property name="jcrUserName">redhat</property>
         <property name="jcrPassword">redhat2</property>
         
