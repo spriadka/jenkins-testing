@@ -6,9 +6,11 @@
 package org.jboss.arquillian.extension.testsuite.tests;
 
 import java.util.concurrent.TimeUnit;
+import org.jboss.arquillian.container.test.api.RunAsClient;
 import org.jboss.arquillian.drone.api.annotation.Drone;
 import org.jboss.arquillian.graphene.Graphene;
 import org.jboss.arquillian.junit.Arquillian;
+import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
@@ -31,22 +33,22 @@ public class AnotherTest {
     private WebElement searchInput;
    
     @Test
-    public void testGoogleAndTypeSomething() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(1);
-        String toWrite = "holbbaaba";
+    @RunAsClient
+    public void testGoogleAndTypeSomething() {
+        String toWrite = "Ahojdy";
         browser.get("http://www.google.com");
-        Graphene.waitModel().until().element(searchInput).is().visible();
         searchInput.sendKeys(toWrite);
     }
     
     @Test
-    public void testSeznamAndTypeSomething() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(1);
+    @RunAsClient
+    public void testSeznamAndTypeSomething(){
         browser.get("http://www.seznam.cz");
         searchInput = browser.findElement(By.name("q"));
-        searchInput.sendKeys("baaabaaaab");
+        searchInput.sendKeys("baab");
         
     }
+    
     
     
 }

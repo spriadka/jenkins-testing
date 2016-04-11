@@ -5,7 +5,6 @@
  */
 package org.jboss.arquillian.extension.testsuite.tests;
 
-import org.jboss.arquillian.junit.Arquillian;
 import org.junit.runner.RunWith;
 
 /**
@@ -13,7 +12,8 @@ import org.junit.runner.RunWith;
  * @author spriadka
  */
 
-@RunWith(Arquillian.class)
+@RunWith(org.junit.runners.Suite.class)
+@org.junit.runners.Suite.SuiteClasses({AnotherTest.class,SimpleTest.class})
 public class Suite {
     
 }
