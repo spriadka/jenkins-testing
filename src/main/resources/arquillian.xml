@@ -162,7 +162,7 @@
     </extension>
     
     <extension qualifier="visual-testing">
-        <property name="testSuiteName">simple-suite</property>
+        <property name="testSuiteName">simple-suite-45</property>
         <!-- this can be detected!!!!! from JCR -->
         <property name="firstRun">false</property>
         <property name="failBuild">false</property>
