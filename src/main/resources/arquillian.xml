@@ -65,7 +65,7 @@
 
     <extension qualifier="webdriver">
         <property name="javascriptEnabled">true</property>
-        <property name="browser">safari</property>
+        <property name="browser">chrome</property>
         <property name="remoteReusable">${arquillian.drone.reusable}</property>
         <property name="remoteAddress">http://localhost:4444/wd/hub/</property>
 		<property name="dimensions">1024x768</property>
